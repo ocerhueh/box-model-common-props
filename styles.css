@@ -1,7 +1,7 @@
 /* 
     This is a CSS comment. Please add your name to this file below:
     
-    NAME: 
+    NAME: Mudi Erhueh
 */
 /* -------------------------------------------------- */
 /* 
@@ -336,6 +336,16 @@ footer{
 /* ADD SELECTOR AND STYLES HERE */
 
 /* For the first link in this section: */
+#section2 a{
+ display: block;   
+ text-decoration: none;
+ text-align: center;
+ font-size: 1.1rem;
+ font-weight: bold;
+ width: 50%;
+ box-shadow: var(--box-shadow-lg);
+}
+
 #section2 a:first-of-type{
     background-color: var(--lt-blue);
     color: var(--dk-gray);
@@ -376,8 +386,14 @@ footer{
             - bottom: 16px
             - left: 60px
 */
+
+
+
 #section2 div > p:last-of-type{
-    
+ background-color: var(--teal-rgba);   
+ border: 4px dashed var(--dk-gray);
+ margin: 16px 60px 32 8px;
+ padding: 32px 8px 16px 60px;
 }
 
  /* For the div wrapped around that paragraph to show the space its taking up within its container */
@@ -394,7 +410,10 @@ footer{
         - add the small box shadow, using the variable in the root
 */
 #section2 a:first-of-type:hover{
-
+background-color: var(--dk-blue);
+color: var(--white);
+border-color: var(--lt-blue);
+box-shadow: var(--box-shadow-sm);
 }
 
 #section2 a:last-of-type:hover{
@@ -418,47 +437,12 @@ footer{
         - add the small filter drop shadow from the CSS variables in the root
 */
 #section3 img{
-    
-}
-
-#section3 div::before{
-    content: "";
     display: block;
-    width: 75px;
-    height: 75px;
-    background-color: var(--teal);
-    border-radius: 50%;
-    position: relative;
-    z-index: 1;
-    top: 12px;
-    left: 12px;
+    width: 200px;
+    height: auto;
+    margin: 0 auto;
+    filter: var(--filter-shadow-sm);
 }
-
-/* For the div in the section, let's make a circle. It will be like a toy ball for our corgi */
-#section3 div{
-    height: 100px;
-    width: 100px;
-    background-color: var(--dk-blue);
-    border-radius: 50%;
-    margin: 0 0 16px 32px;
-    position: relative;
-    z-index: 0;
-    box-shadow: var(--box-shadow-sm);
-}
-
-/* 
-    TO DO: add styles to the after pseudo-element on the div in this section that will:
-        - add content (empty string)
-        - make this display as a block-level element
-        - make this 50px wide
-        - make this 50px tall
-        - make the background the lt-blue color
-        - turn this square div into a circle
-        - set the position to relative
-        - give this a z-index of 2
-        - move this up from its original location by 50px
-        - move this to the right from its original location by 25px
-*/
 #section3 div::after{
 }
 
